@@ -1,94 +1,163 @@
 :root {
-    --main-font: 'Roboto', sans-serif;
-    --secondary-font: 'Raleway', sans-serif;
-    --main-color: black;
-    --white-color: #FFFFFF;
-    --blue-color: #2196F3;
-
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-color: #212121;
+  --white-color: #ffffff;
+  --blue-color: #2196f3;
 }
 
 body {
-    font-family: var(--main-font);
+  font-family: var(--main-font);
 }
 
 /* ======= COMPONENTS ======= */
 
 .logo {
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
 }
 
 .logo-blue {
- color: var(--blue-color);
+  color: var(--blue-color);
 }
 
+ul {
+  list-style: none;
+}
 
 a {
-    text-decoration: none;
-    color: var(--main-color);
+  text-decoration: none;
 }
 
-.secondary-header {
-    
+.section-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* ======= END COMPONENTS ======= */
 
-.menu-navigation-list-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
+/* ======= <HEADER> (MENU NAVIGATION) ======= */
+
+.menu-navigation-list-link,
+.menu-contacts-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
 }
 
-/* ======= <HEADER> (MENU NAVIGATION) ======= */
+.menu-contacts-list-link {
+  color: #757575;
+}
+
+.menu-navigation-list-link:hover,
+.menu-navigation-list-link:focus,
+.menu-contacts-list-link:hover,
+.menu-contacts-list-link:focus {
+  color: var(--blue-color);
+}
+
 /* ======= END <HEADER> (MENU NAVIGATION) ======= */
 
 /* ======= <MAIN> (HEADER)  ======= */
 
-.header {
-    background-color: #2F303A;
-    width: 1600px;
-    height: 600px;
-    text-align: center;
+.background-header {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
 }
 
 .main-header {
-    color: var(--white-color);
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.menu-navigation-list-link {
- font-weight: 600;
- font-size: 12px;
- line-height: 1.33;
- letter-spacing: 0.1em;
- color:black;
-}
-
-.menu-navigation-list-link:hover, 
-.menu-navigation-list-link:focus,
-.menu-contacts-list-link:hover,
-.menu-contacts-list-link:focus {
-    color: var(--blue-color);
+.order-btn {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* ======= END <MAIN> (HEADER) ======= */
 
 /* ======= WHY US ======= */
+
+.article-header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.article-list-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
 /* ======= END WHY US ======= */
 
-
 /* ======= OFFER ======= */
+
 /* ======= END OFFER ======= */
 
-
 /* ======= TEAM ======= */
+
+.team-list {
+  list-style: none;
+}
+.team-list-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
 /* ======= END TEAM ======= */
 
-
 /* =======  CONTACT ======= */
+/* cos to tlo nie dziala */
+.contact {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 252px;
+}
+
+.address-list-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
 /* ======= END CONTACT ======= */
