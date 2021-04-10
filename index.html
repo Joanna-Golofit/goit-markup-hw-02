@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <!-- <HEADER> (MENU NAVIGATION) -->
     <header>
-      <a href="#"><span>Web</span>Studio</a>
-      <nav>
-        <ul>
-          <li><a href="#">Agencja</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+      <nav class="menu-navigation">
+        <a class="logo" href="#"><span class="logo-blue">Web</span>Studio</a>
+        <ul class="menu-navigation-list">
+          <li class="menu-navigation-list-item">
+            <a class="menu-navigation-list-link" href="#">Agencja</a>
+          </li>
+          <li class="menu-navigation-list-item">
+            <a class="menu-navigation-list-link" href="#">Portfolio</a>
+          </li>
+          <li class="menu-navigation-list-item">
+            <a class="menu-navigation-list-link" href="#contact">Kontakt</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+      <ul class="menu-contacts-list">
+        <li class="menu-contacts-list-item">
+          <a class="menu-contacts-list-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="menu-contacts-list-item">
+          <a class="menu-contacts-list-link" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
       </ul>
     </header>
 
     <main>
-      <!-- header -->
-      <section>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <!-- HEADER -->
+      <section class="header">
+        <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button type="button">Zamów usługę</button>
       </section>
 
-      <!-- nasze atuty -->
+      <!-- WHY US -->
       <section>
-        <ul>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+        <ul class="article-list">
+          <li class="article-list-item">
+            <h3 class="article-header">LOREM IPSUM</h3>
+            <p class="article-list-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="article-list-item">
+            <h3 class="article-header">LOREM IPSUM</h3>
+            <p class="article-list-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="article-list-item">
+            <h3 class="article-header">LOREM IPSUM</h3>
+            <p class="article-list-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="article-list-item">
+            <h3 class="article-header">LOREM IPSUM</h3>
+            <p class="article-list-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -64,9 +85,9 @@
         </ul>
       </section>
 
-      <!-- Czym się zajmujemy -->
+      <!-- OFFER -->
       <section>
-        <h2>Czym się zajmujemy</h2>
+        <h2 class="section-header">Czym się zajmujemy</h2>
         <ul>
           <li>
             <img
@@ -74,7 +95,7 @@
               alt="podpowiadamy rozwiązania"
               width="370"
               height="294"
-            >
+            />
           </li>
           <li>
             <img
@@ -82,7 +103,7 @@
               alt="dbamy o responsywność"
               width="370"
               height="294"
-            >
+            />
           </li>
           <li>
             <img
@@ -90,73 +111,82 @@
               alt="dobieramy szatę graficzną"
               width="370"
               height="294"
-            >
+            />
           </li>
         </ul>
       </section>
 
-      <!-- Nasz zespół -->
+      <!-- TEAM -->
       <section>
-        <h2>Nasz zespół</h2>
-        <ul>
-          <li>
+        <h2 class="section-header">Nasz zespół</h2>
+        <ul class="team-list">
+          <li class="team-list-item">
             <img
               src="./images/team/team_product_designer.jpg"
               alt="John Doe - Product Designer"
               width="270"
               height="260"
-            >
-            <h4>John Doe</h4>
-            <p>Product Designer</p>
+            />
+            <h4 class="team-list-name">John Doe</h4>
+            <p class="team-list-position">Product Designer</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img
               src="./images/team/team_frontend_dev.jpg"
               alt="John Doe - Frontend Developer"
               width="270"
               height="260"
-            >
-            <h4>John Doe</h4>
-            <p>Frontend Developer</p>
+            />
+            <h4 class="team-list-name">John Doe</h4>
+            <p class="team-list-position">Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img
               src="./images/team/team_marketing.jpg"
               alt="John Doe - Marketing"
               width="270"
               height="260"
-            >
-            <h4>John Doe</h4>
-            <p>Marketing</p>
+            />
+            <h4 class="team-list-name">John Doe</h4>
+            <p class="team-list-position">Marketing</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img
               src="./images/team/team_ui_designer.jpg"
               alt="John Doe - UI Designer"
               width="270"
               height="260"
-            >
-            <h4>John Doe</h4>
-            <p>UI Designer</p>
+            />
+            <h4 class="team-list-name">John Doe</h4>
+            <p class="team-list-position">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
 
+    <!-- CONTACT -->
     <footer id="contact">
-      <a href="#"><span>Web</span>Studio</a>
-      <address>
-        <ul>
-          <li>
-            <a target="_blank" href="https://goo.gl/maps/rPz5dUSjKDYNv8CF8">
+      <a class="logo" href="#"><span class="logo-blue">Web</span>Studio</a>
+      <address class="address">
+        <ul class="address-list">
+          <li class="address-list-item">
+            <a
+              class="address-list-link"
+              target="_blank"
+              href="https://goo.gl/maps/rPz5dUSjKDYNv8CF8"
+            >
               m. Warszawa, Aleje Jerozolimskie 21
             </a>
           </li>
-          <li>
-            <a href="mailto:info@example.com">info@example.com</a>
+          <li class="address-list-item">
+            <a class="address-list-link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
           </li>
-          <li>
-            <a href="tel:+48111111111">+48 111 111 111</a>
+          <li class="address-list-item">
+            <a class="address-list-link" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
           </li>
         </ul>
       </address>
