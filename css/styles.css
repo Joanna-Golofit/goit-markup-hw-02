@@ -1,16 +1,18 @@
 :root {
-  --main-font: "Roboto", "Verdana", "Tahoma", sans-serif;
-  --secondary-font: "Raleway", "Verdana", "Tahoma", sans-serif;
+  --main-font: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+  --secondary-font: 'Raleway', 'Verdana', 'Tahoma', sans-serif;
   --main-color: #212121;
   --white-color: #ffffff;
   --blue-color: #2196f3;
   --gray-color: #757575;
   --background-color-dark: #2f303a;
+  --background-color-gray: #f5f4fa;
   --opacity-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: var(--main-font);
+  color: var(--main-color);
 }
 
 /* ======= COMPONENTS ======= */
@@ -21,6 +23,7 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 
 .logo-blue {
@@ -52,6 +55,7 @@ body {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
+  color: var(--main-color);
 }
 
 .menu-contacts-list-link {
@@ -61,7 +65,8 @@ body {
 .menu-navigation-list-link:hover,
 .menu-navigation-list-link:focus,
 .menu-contacts-list-link:hover,
-.menu-contacts-list-link:focus {
+.menu-contacts-list-link:focus,
+.active-link {
   color: var(--blue-color);
 }
 
@@ -98,6 +103,7 @@ body {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* ======= END <MAIN> (HEADER) ======= */
@@ -105,18 +111,18 @@ body {
 /* ======= WHY US ======= */
 
 .article-header {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .article-list-text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--gray-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
 }
 /* ======= END WHY US ======= */
 
@@ -126,11 +132,11 @@ body {
 
 /* ======= TEAM ======= */
 
-/* .team {
-    background-color: #F5F4FA;
-    width: 1600px;
-    height: 648px;
-} */
+.team {
+  background-color: var(--background-color-gray);
+  /*  width: 1600px;
+  height: 648px;*/
+}
 
 .team-list {
   list-style: none;
@@ -163,20 +169,51 @@ body {
 }
 
 .address-list-link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    font-style: normal;
-    color: var(--opacity-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--opacity-color);
 }
-
 
 .address-list-link:hover,
 .address-list-link:focus {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 
 .white {
-    color: var(--white-color);
+  color: var(--white-color);
 }
+
 /* ======= END CONTACT ======= */
+
+/* ===================== portfolio ===================== */
+
+/* ======= PORTFOLIO ======= */
+
+.filter-btn {
+  background-color: var(--background-color-gray);
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.active-btn {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.examples-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-list-category {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
+}
+/* ======= END PORTFOLIO ======= */
