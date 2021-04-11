@@ -1,9 +1,12 @@
 :root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --main-font: "Roboto", "Verdana", "Tahoma", sans-serif;
+  --secondary-font: "Raleway", "Verdana", "Tahoma", sans-serif;
   --main-color: #212121;
   --white-color: #ffffff;
   --blue-color: #2196f3;
+  --gray-color: #757575;
+  --background-color-dark: #2f303a;
+  --opacity-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -12,7 +15,7 @@ body {
 
 /* ======= COMPONENTS ======= */
 
-.logo {
+.logo-link {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -20,24 +23,19 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-white {
-    color: var(--white-color);
-}
-
 .logo-blue {
   color: var(--blue-color);
 }
 
-ul {
-  list-style: none;
-}
-
-a {
+.address-list-link,
+.menu-navigation-list-link,
+.logo-link,
+.menu-contacts-list-link {
   text-decoration: none;
 }
 
 .section-header {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
@@ -57,7 +55,7 @@ a {
 }
 
 .menu-contacts-list-link {
-  color: #757575;
+  color: var(--gray-color);
 }
 
 .menu-navigation-list-link:hover,
@@ -72,7 +70,7 @@ a {
 /* ======= <MAIN> (HEADER)  ======= */
 
 .background-header {
-  background-color: #2f303a;
+  background-color: var(--background-color-dark);
   width: 1600px;
   height: 600px;
 }
@@ -91,7 +89,7 @@ a {
   background-color: var(--blue-color);
   color: var(--white-color);
   font-family: var(--main-font);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -107,19 +105,18 @@ a {
 /* ======= WHY US ======= */
 
 .article-header {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .article-list-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: #757575;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
 }
 /* ======= END WHY US ======= */
 
@@ -138,6 +135,7 @@ a {
 .team-list {
   list-style: none;
 }
+
 .team-list-name {
   font-weight: 500;
   font-size: 16px;
@@ -147,33 +145,38 @@ a {
 }
 
 .team-list-position {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--gray-color);
 }
 /* ======= END TEAM ======= */
 
 /* =======  CONTACT ======= */
 
 .contact {
-  background-color: #2f303a;
+  background-color: var(--background-color-dark);
   width: 1600px;
   height: 252px;
 }
 
 .address-list-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: var(--opacity-color);
 }
 
-.address-list-link.white {
+
+.address-list-link:hover,
+.address-list-link:focus {
+    color: var(--blue-color);
+}
+
+.white {
     color: var(--white-color);
 }
 /* ======= END CONTACT ======= */
